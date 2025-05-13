@@ -152,7 +152,8 @@ class MyProcessor():
         self.llm_model_type = 'qwen2'
 
         self.num_query_token=2560
-        self.glm_model = "Qwen/Qwen2.5-7B-Instruct"
+        # self.glm_model = "Qwen/Qwen2.5-7B-Instruct"
+        self.glm_model = glm_model
         self.tokenizer = init_tokenizer(
             self.glm_model, 
             interleave_tokens
